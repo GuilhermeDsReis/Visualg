@@ -1,27 +1,30 @@
-Algoritmo "sistema_login"
+    Algoritmo "sistema_login"
+    
+    Var
 
-// 3 tentativas frustadas = Mensagem "conta bloqueada"
-// Definir usuário e senha corretos
-// Pedir para o usuário digitar o usuário e a senha
+    usuario_digitado, senha_digitada : caracter
+     
+    usuario_correto, senha_correta : caracter
+   
+    t : inteiro
 
-Var
+    Inicio
 
-usuario_digitado, senha_digitada : caracter
-usuario_correto, senha_correta : caracter
-t : inteiro
+    usuario_correto <- "admin"
+         
+    senha_correta <- "admin"
+    
 
-Inicio
-
-usuario_correto <- "admin"
-senha_correta <- "admin"
-
-   para t de 0 até 3 Faça
-     Escreval("Digite o Usuario e a senha: ")
-     Escreval("")
-     Escreval("Usuario:")
+      para t de 0 até 3 Faça
+   
+        Escreval("Digite o Usuario e a senha: ")
+        Escreval("") 
+        Escreval("Usuario:")
+     
      Leia(usuario_digitado)
      
-     Escreval("")
+     
+      Escreval("")
      
      Escreval("Senha")
      Leia(Senha_digitada)
